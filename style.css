@@ -1,0 +1,766 @@
+
+body{
+    margin:0;
+    background:#000;
+    font-family:Letterpress Text Bold, Geneva, sans-serif;
+    color:white;
+}
+
+#site{
+    display:none;
+}
+
+#splash{
+
+    position:fixed;
+    inset:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#000;
+
+    background-image:
+    radial-gradient(#333 1px, transparent 1px);
+
+    background-size:18px 18px;
+
+}
+
+.window{
+
+    width:500px;
+
+    background:#111;
+
+    border:4px ridge #666;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 0 40px crimson;
+
+}
+
+.window h1{
+
+    color:crimson;
+    font-size:60px;
+    margin:0;
+
+}
+
+.window h2{
+
+    letter-spacing:3px;
+
+}
+
+.subtitle{
+
+    color:#999;
+    font-style:italic;
+
+}
+
+.loading{
+
+    color:#ff6666;
+
+    animation:pulse 1s infinite;
+
+}
+
+button{
+
+    padding:12px 40px;
+
+    background:#222;
+
+    color:white;
+
+    border:2px outset #777;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+}
+
+button:hover{
+
+    background:crimson;
+
+}
+
+.small{
+
+    color:#777;
+    font-size:11px;
+    margin-top:25px;
+
+}
+
+@keyframes pulse{
+
+50%{
+
+opacity:.3;
+
+}
+
+}
+
+#splash {
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+#splash.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#site {
+  opacity: 0;
+  transition: opacity 1s ease;
+  display: none;
+}
+
+#site.show {
+  display: block;
+  opacity: 1;
+}
+
+/* =========================
+   FUNERAL FOR A FAN PROFILE
+   ========================= */
+
+body{
+    background:#080808;
+}
+
+.profile{
+
+    width:900px;
+    margin:30px auto;
+
+    background:#151515;
+
+    border:3px solid #444;
+
+    box-shadow:
+    0 0 20px #000,
+    0 0 40px crimson;
+
+}
+
+/* UPDATE BOX */
+
+.update{
+
+    background:#000;
+
+    border-top:1px solid #333;
+    border-bottom:2px solid crimson;
+
+    padding:15px;
+
+    text-align:center;
+
+    color:#aaa;
+
+    font-size:13px;
+
+    line-height:1.6;
+
+}
+
+
+/* HEADINGS */
+
+h2{
+
+    color:#ff5555;
+
+}
+/* HEADER */
+
+.header{
+
+    background:
+    linear-gradient(#333,#111);
+
+    padding:25px;
+
+    text-align:center;
+
+    border-bottom:2px solid crimson;
+
+}
+
+.header h1{
+
+    margin:0;
+
+    color:#ff4444;
+
+    font-size:32px;
+
+    letter-spacing:4px;
+
+    text-shadow:
+    2px 2px #000;
+
+}
+
+.header p{
+
+    color:#aaa;
+
+}
+
+
+/* NAV */
+
+.nav{
+
+    text-align:center;
+
+    padding:12px;
+
+    background:#000;
+
+}
+
+
+.nav a{
+
+    color:#ff6666;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    margin:0 15px;
+
+}
+
+
+.nav a:hover{
+
+    color:white;
+
+    text-decoration:underline;
+
+}
+
+
+/* MAIN FANSITE LAYOUT */
+
+.columns{
+
+    display:grid;
+    grid-template-columns:250px 1fr;
+
+    align-items:start;
+
+}
+
+
+.left{
+
+    padding:20px;
+
+    background:#111;
+
+    border-right:2px solid #333;
+
+}
+
+
+.right{
+
+    padding:20px;
+
+    background:#151515;
+
+}
+
+
+
+
+/* IMAGES */
+
+.bandpic{
+
+    width:220px;
+
+    border:5px solid #333;
+
+    filter:grayscale(20%);
+
+}
+
+
+/* HEADINGS */
+
+h2{
+
+    color:#ff5555;
+
+    font-size:18px;
+
+    border-bottom:1px dotted #666;
+
+    padding-bottom:5px;
+
+}
+
+
+/* FRIENDS */
+
+.friends{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+
+.friends span{
+
+    width:45px;
+
+    height:45px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#222;
+
+    border:2px solid #666;
+
+    color:crimson;
+
+    font-size:25px;
+
+}
+
+/* =========================
+   CD STYLE ALBUM CARDS
+   ========================= */
+
+.album{
+
+    display:flex;
+
+    background:#111;
+
+    border:2px solid #333;
+
+    margin:15px 0;
+
+    padding:15px;
+
+    box-shadow:
+    inset 0 0 15px #000,
+    0 0 10px #000;
+
+    transition:0.3s;
+
+}
+
+
+.album:hover{
+
+    border-color:crimson;
+
+    box-shadow:
+    0 0 15px crimson;
+
+}
+
+
+/* Fake CD cover */
+
+.album-cover{
+
+    width:110px;
+
+    height:110px;
+
+    margin-right:20px;
+
+    border:3px solid #555;
+
+    background:#000;
+
+    object-fit:cover;
+
+    box-shadow:
+    0 0 10px #000;
+
+}
+
+
+/* Album information */
+
+.albuminfo{
+
+    flex:1;
+
+}
+
+
+.albuminfo h3{
+
+    margin:0;
+
+    color:#ff5555;
+
+    font-size:18px;
+
+    letter-spacing:1px;
+
+}
+
+
+.albuminfo p{
+
+    color:#aaa;
+
+    margin-top:8px;
+
+}
+
+
+/* Year badge */
+
+.year{
+
+    display:inline-block;
+
+    margin-top:8px;
+
+    padding:4px 10px;
+
+    background:#000;
+
+    border:1px solid #666;
+
+    color:white;
+
+    font-size:12px;
+
+}
+
+/* COMMENTS */
+
+.comment{
+
+    background:#0a0a0a;
+
+    border:1px solid #333;
+
+    padding:12px;
+
+    margin:10px 0;
+
+}
+
+
+.comment b{
+
+    color:#ff6666;
+
+}
+
+
+/* FOOTER */
+
+footer{
+
+    text-align:center;
+
+    padding:15px;
+
+    background:#000;
+
+    color:#777;
+
+    font-size:11px;
+
+}
+
+/* =========================
+   CUSTOM SKULL CURSOR
+   ========================= */
+
+html, body {
+  cursor: url("https://raw.githubusercontent.com/Sonic-Sloth/Funeral-For-A-Fans/main/SKULL%2016P.png") 8 8, auto;
+}
+
+.counter {
+    background:#000;
+
+    border:3px ridge crimson;
+
+    padding:15px;
+
+    display:inline-block;
+
+    margin:10px auto;
+
+    box-shadow:
+    0 0 10px crimson;
+
+    transform:scale(1.3);
+
+}
+
+/* COMMENTS */
+
+.comment{
+...
+}
+
+/* FOOTER */
+
+footer{
+...
+}
+
+/* CUSTOM SKULL CURSOR */
+
+html, body{
+...
+}
+
+/* GUESTBOOK */
+
+.guestbook{
+...
+}
+
+/* PHOTO ARCHIVE */
+
+.contact-sheet{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:8px;
+
+    background:#1a1a1a;
+
+    border:4px ridge #666;
+
+    padding:12px;
+
+}
+
+.contact-sheet img{
+
+    width:100%;
+
+    height:120px;
+
+    object-fit:cover;
+
+    display:block;
+
+    border:2px solid #444;
+
+    filter:grayscale(100%);
+
+    transition:.3s;
+
+}
+
+.contact-sheet img:hover{
+
+    filter:grayscale(0%);
+
+    border-color:crimson;
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 15px crimson;
+
+}
+
+  .gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  cursor: pointer;
+  border: 3px solid #660000;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+
+.gallery img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px crimson;
+}
+
+
+/* FULL SCREEN VIEWER */
+
+#lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border: 5px solid #990000;
+}
+
+#lightbox span {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  font-family: Arial;
+}
+
+  #lightbox img {
+  width: auto;
+  height: auto;
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+  /* WINAMP */
+
+.winamp{
+
+background:black;
+
+border:2px outset white;
+
+padding:6px;
+
+font-family:Tahoma,Arial,sans-serif;
+
+color:black;
+
+margin:15px 0;
+
+}
+
+
+.winamp-title{
+
+background:linear-gradient(#1c55d6,#003399);
+
+color:white;
+
+padding:4px;
+
+font-size:12px;
+
+font-weight:bold;
+
+}
+
+
+.winamp-screen{
+
+background:black;
+
+color:crimson;
+
+padding:10px;
+
+font-family:monospace;
+
+font-size:12px;
+
+}
+
+
+.progress{
+
+height:8px;
+
+background:#333;
+
+margin-top:8px;
+
+}
+
+
+#progressbar{
+
+width:0%;
+
+height:100%;
+
+background:crimson;
+
+}
+
+
+.controls{
+
+display:flex;
+
+justify-content:center;
+
+gap:8px;
+
+margin-top:8px;
+
+}
+
+
+.controls button{
+
+width:40px;
+
+padding:6px;
+
+background:#ddd;
+
+color:black;
+
+border:2px outset white;
+
+font-weight:bold;
+
+cursor:pointer;
+
+}
+
+.controls button:active{
+
+border:2px inset white;
+
+}
+
+  
